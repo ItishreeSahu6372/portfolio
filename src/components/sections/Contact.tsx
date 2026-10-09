@@ -70,12 +70,13 @@ export function Contact() {
         await emailjs.send(
           serviceId,
           templateId,
-          {
-            from_name: data.name,
-            from_email: data.email,
-            subject: data.subject,
-            message: data.message,
-          },
+         {
+          name: data.name,
+          email: data.email,
+          title: data.subject,
+          message: data.message,
+          time: new Date().toLocaleString("en-IN"),
+        },
           { publicKey },
         );
         toast({
