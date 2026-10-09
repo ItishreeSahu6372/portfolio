@@ -7,7 +7,7 @@ import { GradientOrbs } from "@/components/GradientOrbs";
 import { useImageError } from "@/hooks/use-image-error";
 import { User } from "lucide-react";
 
-const profileImage = "src/assets/images/profile.jpg";
+const profileImage = "/profile.jpg";
 
 export function Hero() {
   const hasError = useImageError(profileImage);
@@ -119,7 +119,7 @@ export function Hero() {
                       Profile photo placeholder
                       <br />
                       <span className="text-muted-foreground/60">
-                        add src/assets/images/profile.jpg
+                        add /profile.jpg
                       </span>
                     </p>
                   </div>
